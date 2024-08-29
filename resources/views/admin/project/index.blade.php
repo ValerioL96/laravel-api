@@ -40,7 +40,7 @@
                             @endforelse
                         </td>
                         <td>
-                            <a href=" {{ $project->url_repo}}">Click here for the repository</a></td>
+                            <a href=" {{ $project->url_repo}}"><i class="fa-brands fa-github text-secondary text-center fs-2"></i></i></a></td>
                         <td>
 
                             <a href="{{ route('admin.project.show', $project )}}" class="btn btn-info btn-sm">Show</a>

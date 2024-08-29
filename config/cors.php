@@ -19,9 +19,9 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => [env('APP_FRONTEND_URL'),env('APP_FRONTEND_URL_2')],
 
-    'allowed_origins_patterns' => [],
+    'allowed_origins_patterns' => [env('APP_FRONTEND_URL')],
 
     'allowed_headers' => ['*'],
 
