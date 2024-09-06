@@ -13,7 +13,8 @@
                         <th scope="col">Type</th>
                         <th scope="col">Project Name</th>
                         <th scope="col">Technology used</th>
-                        <th scope="col">Url Repository</th>
+                        <th scope="col">Repository</th>
+                        <th scope="col">Site</th>
                         <th scope="col">Actions</th>
                     </tr>
                     </thead>
@@ -41,8 +42,11 @@
                         </td>
                         <td>
                             <a href=" {{ $project->url_repo}}"><i class="fa-brands fa-github text-secondary text-center fs-2"></i></i></a></td>
+                        </td>
                         <td>
-
+                            <a href=" {{ $project->url_site}}"><i class="fa-solid fa-globe text-secondary text-center fs-2"></i></i></a></td>
+                        </td>
+                        <td>
                             <a href="{{ route('admin.project.show', $project )}}" class="btn btn-info btn-sm">Show</a>
                             <a href="{{ route('admin.project.edit', $project )}}" class="btn btn-warning btn-sm">Edit</a>
                             <form action="{{ route('admin.project.destroy', $project) }}" method="POST" class="d-inline-block delete-form mx-2" data_project_id="{{ $project->id }}" data_project_name="{{ $project->name }}">

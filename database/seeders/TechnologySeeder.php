@@ -15,86 +15,53 @@ class TechnologySeeder extends Seeder
     {
         $technologiesData = [
             [
+                'id' => 1,
                 'name' => 'JavaScript',
-                'color' => '#F0DB4F'
+                'color' => '#FF5733'
             ],
             [
-                'name' => 'Python',
-                'color' => '#306998'
+                'id' => 2,
+                'name' => 'Laravel',
+                'color' => '#FF0000'
             ],
             [
-                'name' => 'Java',
-                'color' => '#b07219'
+                'id' => 3,
+                'name' => 'Bootstrap',
+                'color' => '#563D7C'
             ],
             [
-                'name' => 'C++',
-                'color' => '#004482'
-            ],
-            [
+                'id' => 4,
                 'name' => 'PHP',
-                'color' => '#4F5D95'
+                'color' => '#8892BF'
             ],
             [
-                'name' => 'Ruby',
-                'color' => '#701516'
-            ],
-            [
-                'name' => 'Go',
-                'color' => '#00ADD8'
-            ],
-            [
-                'name' => 'Swift',
-                'color' => '#FA7343'
-            ],
-            [
-                'name' => 'Kotlin',
-                'color' => '#A97BFF'
-            ],
-            [
-                'name' => 'TypeScript',
-                'color' => '#3178C6'
-            ],
-            [
-                'name' => 'Rust',
-                'color' => '#DEA584'
-            ],
-            [
-                'name' => 'Scala',
-                'color' => '#DC322F'
-            ],
-            [
-                'name' => 'Dart',
-                'color' => '#00B4AB'
-            ],
-            [
+                'id' => 5,
                 'name' => 'HTML',
-                'color' => '#E34C26'
+                'color' => '#FF4500'
             ],
             [
+                'id' => 6,
                 'name' => 'CSS',
-                'color' => '#1572B6'
+                'color' => '#264DE4'
             ],
             [
-                'name' => 'SQL',
-                'color' => '#4479A1'
+                'id' => 7,
+                'name' => 'Vue',
+                'color' => '#42B883'
             ],
             [
-                'name' => 'R',
-                'color' => '#276DC3'
+                'id' => 8,
+                'name' => 'MySQL',
+                'color' => '#F29111'
             ],
             [
-                'name' => 'Perl',
-                'color' => '#39457E'
+                'id' => 9,
+                'name' => 'Blade',
+                'color' => '#774DF4'
             ],
-            [
-                'name' => 'Haskell',
-                'color' => '#5D4F85'
-            ],
-            [
-                'name' => 'Elixir',
-                'color' => '#4B275F'
-            ]
         ];
+
+
 
         foreach ($technologiesData as $technologyData) {
             Technology::create($technologyData);

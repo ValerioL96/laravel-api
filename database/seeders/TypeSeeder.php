@@ -15,42 +15,22 @@ class TypeSeeder extends Seeder
     {
         $types = [
             [
-                "name" => "Web Development",
-                "color" => "#1E90FF", // DodgerBlue
-            ],
-            [
-                "name" => "Operating Systems",
-                "color" => "#32CD32", // LimeGreen
-            ],
-            [
-                "name" => "DataBase",
-                "color" => "#FFD700", // Gold
-            ],
-            [
-                "name" => "Gaming",
-                "color" => "#FF4500", // OrangeRed
-            ],
-            [
-                "name" => "Network",
-                "color" => "#8A2BE2", // BlueViolet
-            ],
-            [
-                "name" => "Systems Security",
-                "color" => "#FF69B4", // HotPink
-            ],
-            [
+                "id"=>"1",
                 "name" => "Front-End",
                 "color" => "#00BFFF", // DeepSkyBlue
             ],
             [
+                "id"=>"2",
                 "name" => "Back-End",
                 "color" => "#FF6347", // Tomato
             ],
             [
-                "name" => "Full-Stack",
+                "id"=>"3",
+                "name"=> "Full-Stack",
                 "color" => "#2E8B57", // SeaGreen
             ]
     ];
+
 
     foreach ($types as $type) {
         $newType = new Type();
