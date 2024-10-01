@@ -23,7 +23,7 @@ class StoreProjectRequest extends FormRequest
     {
         return [
                 "name"=>['required', 'min:2', 'max:255'],
-                "language_used"=>['required', 'min:2', 'max:255'],
+
                 "url_repo"=>['url', 'nullable'],
                 'type_id' => ['required', 'exists:types,id'],
                 'technologies' => ['required', 'array', 'exists:technologies,id'],
@@ -39,7 +39,7 @@ public function messages(): array
 {
     return [
         "name"=>'You must enter a valid name!',
-        "language_used"=>'You must enter a valid language between 1 and 250 characters!',
+
         "url_repo"=>'You must enter a valid URL!',
         "type_id"=>'You must enter a valid Type!'
     ];

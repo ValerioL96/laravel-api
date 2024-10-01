@@ -33,7 +33,7 @@
                     <label for="technology_id"><strong>Technology used</strong></label>
                     <div class="btn-group flex-wrap" role="group" aria-label="Basic checkbox toggle button group">
                         @foreach ($technologies as $technology)
-                        <input name="technologies" type="checkbox" class="btn-check " id="technology-check-{{$technology->id}}" autocomplete="off" value="{{$technology->id}}">
+                        <input  name="technologies[]" type="checkbox" class="btn-check " id="technology-check-{{$technology->id}}" autocomplete="off" value="{{$technology->id}}">
                         <label class="btn btn-outline-primary m-1 btn-sm rounded mb-2 " for="technology-check-{{$technology->id}}">
                             {{$technology->name}}
                         </label>
